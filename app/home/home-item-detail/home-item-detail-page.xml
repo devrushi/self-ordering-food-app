@@ -1,0 +1,15 @@
+<!-- <Page
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar>
+        <NavigationButton tap="onBackButtonTap" android.systemIcon="ic_menu_back"/>
+        <Label text="{{ name }}"></Label>
+    </ActionBar>
+
+    <GridLayout rows="*,*,*">
+        <Label row="0" class="m-10 h3" text="{{ description }}" verticalAlignment="top" ></Label>
+        <Label row="1" text="Add + 1" tap="onAdd"/>
+        <Label row="2" text="{{'Total '+ totalPrice +' for '+count+' items.'}}"/>
+    </GridLayout>
+</Page> -->

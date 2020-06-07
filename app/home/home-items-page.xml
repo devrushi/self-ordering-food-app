@@ -1,0 +1,31 @@
+<Page
+    navigatingTo="onNavigatingTo"  
+    xmlns:lv="nativescript-ui-listview">
+
+    <ActionBar>
+        <Label text="Menu"></Label>
+    </ActionBar>
+<GridLayout rows="*,auto"  backgroundColor="">
+<GridLayout row="0" >
+    <lv:RadListView   items="{{ items }}" itemTap="onItemTap">
+        <lv:RadListView.itemTemplate>
+            <GridLayout rows="*,*" backgroundColor="black">
+            <GridLayout row="0" class="fitem">
+                <Image stretch="aspectFill"  src="{{imagesrc}}" width="300" height="200"/>
+            </GridLayout>
+            <GridLayout orientation="horizontal" columns="*,auto,*" row="1" class="fdetails">
+                <Label col="0" text="{{ name }}" textWrap="true" textAlignment="center"></Label>
+                <Label col="1" id="itemPrice" text="{{'Rs '+rate}}" textAlignment="center" ></Label>
+                <Label col="2" id="" text="X items" textAlignment="center" ></Label>
+            </GridLayout>
+            </GridLayout>
+        </lv:RadListView.itemTemplate>
+    </lv:RadListView>
+    </GridLayout>
+    <GridLayout row="1" columns="*,*" backgroundColor="Green" height="50">
+    <Label col="0" text="Total Bill"/> 
+    <Label col="1" id="totalBillAmount" text=" Rs.0.00" />
+    </GridLayout>
+
+    </GridLayout>
+</Page>
